@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>UML Class Diagram – Complete Class Relationships | Online Hall Booking System</title><link rel="stylesheet" href="style.css"></head><body>
+<header><div class="nav"><a class="brand" href="index.html">HALL<span>BOOK</span> · REVIEW 1</a><nav><a href="index.html">Home</a><a href="problem.html">Problem Statement</a><a href="objectives.html">Objectives</a><a href="scope.html">Scope of the Project</a><a href="requirements.html">Software & Hardware Requirements</a><a href="modules.html">Modules of the Project</a><a href="oop.html">OOP Concepts Used</a><a href="use-case.html">Use Case Diagram</a><a href="class-diagram.html">Class Diagram</a><a href="activity-diagram.html">Activity Diagram</a><a href="relationships.html" class="active">UML Class Diagram – Complete Class Relationships</a><a href="output.html">Expected Output</a><a href="future.html">Future Enhancements</a><a href="references.html">References</a></nav></div></header>
+<main><section class="section reveal"><div class="section-head"><span class="section-no">10 · COMPLETE RELATIONSHIPS</span><h2>UML Class Diagram – Complete Class Relationships</h2></div>
+<div class="diagram-wrap">
+<div class="uml">
+<div class="uml-box"><div class="uml-head">User</div><ul><li>− userId : int</li><li>− name : String</li><li>− email : String</li><li>− phone : String</li><li>+ register()</li><li>+ login()</li><li>+ viewBooking()</li></ul></div>
+<div class="relation">makes</div>
+<div class="uml-box"><div class="uml-head">Booking</div><ul><li>− bookingId : int</li><li>− userId : int</li><li>− hallId : int</li><li>− date : String</li><li>− timeSlot : String</li><li>+ createBooking()</li><li>+ updateBooking()</li><li>+ cancelBooking()</li></ul></div>
+</div>
+<div class="uml" style="margin-top:18px"><div class="uml-box"><div class="uml-head">Hall</div><ul><li>− hallId : int</li><li>− hallName : String</li><li>− capacity : int</li><li>− location : String</li><li>+ addHall()</li><li>+ updateHall()</li><li>+ checkAvailability()</li></ul></div>
+<div class="relation">has</div>
+<div class="uml-box"><div class="uml-head">Report</div><ul><li>− reportId : int</li><li>− bookingId : int</li><li>+ generate()</li><li>+ display()</li></ul></div>
+</div>
+<div class="relationships"><div class="rel">User 1 ─── makes ─── 0..* Bookings</div><div class="rel">Hall 1 ─── has ─── 0..* Bookings</div><div class="rel">Booking ─── generates ─── Report</div></div>
+<p style="color:#667085;font-size:13px;margin-bottom:0">The diagram connects the major classes used in the proposed Online Hall Booking System. User creates bookings, each booking is linked to one hall, and reports summarize booking information.</p>
+</div></section></main>
+<footer>Online Hall Booking System · Mini Project – PBCST304 · Review 1 · AI&ML, CET Payyanur · Academic Year 2026–27</footer>
+</body></html>
