@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>UML – Class Diagram | Online Hall Booking System</title><link rel="stylesheet" href="style.css"></head><body>
+<header><div class="nav"><a class="brand" href="index.html">HALL<span>BOOK</span> · REVIEW 1</a><nav><a href="index.html">Home</a><a href="problem.html">Problem Statement</a><a href="objectives.html">Objectives</a><a href="scope.html">Scope of the Project</a><a href="requirements.html">Software & Hardware Requirements</a><a href="modules.html">Modules of the Project</a><a href="oop.html">OOP Concepts Used</a><a href="use-case.html">Use Case Diagram</a><a href="class-diagram.html" class="active">Class Diagram</a><a href="activity-diagram.html">Activity Diagram</a><a href="relationships.html">UML Class Diagram – Complete Class Relationships</a><a href="output.html">Expected Output</a><a href="future.html">Future Enhancements</a><a href="references.html">References</a></nav></div></header>
+<main><section class="section reveal"><div class="section-head"><span class="section-no">08 · CLASS DIAGRAM</span><h2>UML – Class Diagram</h2><p class="section-sub">Suggested classes and their members/methods.</p></div>
+<div class="diagram-wrap"><div class="uml">
+<div class="uml-box"><div class="uml-head">User</div><ul><li>− userId</li><li>− name</li><li>− email</li><li>− phone</li><li>Methods: register(), login(), viewBooking()</li></ul></div>
+<div class="relation">interacts<br/>with</div>
+<div class="uml-box"><div class="uml-head">Hall</div><ul><li>− hallId</li><li>− hallName</li><li>− capacity</li><li>− location</li><li>− facilities</li><li>Methods: addHall(), updateHall(), checkAvailability()</li></ul></div>
+</div>
+<div class="uml" style="margin-top:20px"><div class="uml-box"><div class="uml-head">Booking</div><ul><li>− bookingId</li><li>− userId</li><li>− hallId</li><li>− date</li><li>− timeSlot</li><li>Methods: createBooking(), updateBooking(), cancelBooking()</li></ul></div><div class="relation">linked<br/>to</div><div class="uml-box"><div class="uml-head">Other classes</div><ul><li>HallManager</li><li>Report</li></ul></div></div>
+</div></section></main>
+<footer>Online Hall Booking System · Mini Project – PBCST304 · Review 1 · AI&ML, CET Payyanur · Academic Year 2026–27</footer>
+</body></html>
